@@ -33,6 +33,7 @@ else
 fi
 
 # login with no-root user
+export TERM=xterm
 /bin/su -l $name -c '/app/gotty -w emacs &'
 
 
