@@ -31,6 +31,7 @@ else
     adduser $name sudo
     echo -e "${password}\n${password}" | passwd $name
 fi
+usermod -s /bin/bash $name
 
 # login with no-root user
 service ssh start
